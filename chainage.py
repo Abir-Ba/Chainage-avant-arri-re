@@ -5,7 +5,7 @@ regle=[]
 def remplirBases():
     left_regle=''
     right_regle=''
-    file = open("exo2.txt","r")
+    file = open("test.txt","r")
     f = file.readlines()
      
     for line in f:
@@ -155,11 +155,11 @@ def chainageArriere(f):
 
 
 
-ajouterFait('B')
-ajouterFait('C')
+ajouterFait('E')
+ajouterFait('F')
 remplirBases()
 affichierRegles(baseRegles)
-chainageAvant('G')
-#chainageArriere('H')
+chainageAvant('C')
+#chainageArriere('C')
 affichierBaseFaits(baseFaits)
 affichierReglesUtiliser(ReglesUtiliser)
