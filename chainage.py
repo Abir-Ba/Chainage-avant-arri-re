@@ -2,7 +2,7 @@ baseFaits = []
 baseRegles = []
 ReglesUtiliser = []
 regle=[]
-def remplirBases():
+def readFile():
     left_regle=''
     right_regle=''
     file = open("test.txt","r")
@@ -157,7 +157,7 @@ def chainageArriere(f):
 
 ajouterFait('E')
 ajouterFait('F')
-remplirBases()
+readFile()
 affichierRegles(baseRegles)
 chainageAvant('C')
 #chainageArriere('C')
